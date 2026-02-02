@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f2f4f7;
+    padding: 20px;
+}
+
+.resume {
+    max-width: 900px;
+    background: #ffffff;
+    margin: auto;
+    padding: 28px 36px;
+    color: #222;
+    line-height: 1.45;
+}
+
+header {
+    text-align: center;
+    /* border-bottom: 1.5px solid #222; */
+    padding-bottom: 12px;
+    /* margin-bottom: 10px; */
+    margin-top: 3%;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+.contact span {
+    font-weight: 600;
+}
+
+section {
+    margin-bottom: 14px;
+}
+
+section h2 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+section h3 {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+ul {
+    margin-left: 18px;
+}
+
+ul li {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.job-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.job-title span {
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+a {
+    color: #0b57d0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* PRINT SETTINGS */
+
+@page {
+    size: A4;
+    margin: 12mm;   
+}
+
+@media print {
+
+    body {
+        background: none;
+        padding: 0;
+    }
+
+    .resume {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        line-height: 1.35;   
+    }
+
+    body, p, li {
+        font-size: 12px;   
+    }
+
+    header h1 {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+    }
+
+    header p {
+        font-size: 11px;
+    }
+
+    section h2 {
+        font-size: 14px;
+        margin-bottom: 4px;
+        padding-bottom: 2px;
+    }
+
+    section h3 {
+        font-size: 12.5px;
+        margin-top: 6px;
+        margin-bottom: 2px;
+    }
+
+    .job-title {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .job-title span {
+        font-size: 11px;
+    }
+
+    ul {
+        margin-left: 16px;
+    }
+
+    ul li {
+        margin-bottom: 2px;
+    }
+
+    section {
+        margin-bottom: 10px;
+        page-break-inside: avoid;
+    }
+
+    h2, h3, ul {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+}
